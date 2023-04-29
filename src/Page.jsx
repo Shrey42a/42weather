@@ -43,7 +43,7 @@ function Page() {
             days: "5"
         }
         const response = await axios
-            .get("http://api.weatherapi.com/v1/forecast.json?", { params })
+            .get("https://api.weatherapi.com/v1/forecast.json?", { params })
         console.log("dusra data", response.data.forecast.forecastday);
         return response.data.forecast.forecastday;
     }
