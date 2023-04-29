@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.simple-spinner {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.simple-spinner span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-right-color: rgba(255, 255, 255, 0.7);
+    animation: spinner-anim 0.8s linear infinite;
+}
+
+@keyframes spinner-anim {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+:root {
+    --animate-delay: 0.5s;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 241, 64, 0.826);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 238, 235, 0.3);
+}
+
+.shd {
+    box-shadow: 0px 2px 3px #79a4ae,
+        0px 1px 3px #636465;
+}
+
+.bxsd {
+    background-color: rgba(185, 178, 191, 0.878);
+    box-shadow: inset 0px 2px 3px #79a4ae,
+        inset -3px -2px 3px #636465;
+}
+
+.glass {
+    backdrop-filter: blur(3px) saturate(107%);
+    -webkit-backdrop-filter: blur(3px) saturate(107%);
+    background-color: rgba(18, 228, 39, 0.299);
+}
+
+.bg {
+    background-color: rgba(255, 255, 255, 0.26);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    color: #12e427;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+}
+
+.wrapper:hover {
+    margin-top: -2px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
+
+.wrapper2 {
+    color: #928e8e;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+}
+
+.wrapper2:hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
+
+.wrapper3 {
+    color: #f324246c;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 150ms;
+}
+
+.wrapper3:hover {
+    margin-top: -10px;
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+    transform: translate(0, -5);
+}
+
+.wrapper4 {
+    color: #00ffc3c0;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+}
+
+.wrapper4:hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
+
+.fnt {
+    font-family: 'Monoton', cursive;
+}
