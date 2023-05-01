@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 function Sidenav({ xyz }) {
     return (
         <>
-            <div className="fixed lg:hidden md:hidden z-10 flex flex-col justify-start space-y-8 px-4 py-4 bxsd animate__animated animate__rotateInDownRight animate__repeat-1 h-full w-60 overflow-hidden bg-white/30 shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)]">
-                <div className='w-full h-40 rounded-lg bg-white/10'>
+            <div className="fixed backdrop-blur-sm lg:hidden md:hidden z-10 flex flex-col justify-start space-y-8 px-4 py-4 bxsd animate__animated animate__rotateInDownRight animate__repeat-1 h-full w-60 overflow-hidden bg-white/10">
+                <div className='w-full h-40 rounded-lg bg-white/10 shadow-sm shadow-zinc-700'>
                     <img className='h-full w-full' src='/LOGO2.png' />
                 </div>
-                <ul className='text-md font-bold uppercase space-y-4 flex flex-col justify-evenly text-gray-700'>
-                    <li className='hover:text-lime-400 hover:transition hover:ease-in-out border-b p-1 w-max rounded-lg border-gray-600 cursor-pointer'><Link to="/" onClick={xyz}>Home</Link></li>
-                    <li className='hover:text-lime-400 hover:transition hover:ease-in-out border-b p-1 w-max rounded-lg border-gray-600 cursor-pointer'><Link to="/about" onClick={xyz}>About</Link></li>
-                    <li className='hover:text-lime-400 hover:transition hover:ease-in-out border-b p-1 w-max rounded-lg border-gray-600 cursor-pointer'><Link to="/pricing" onClick={xyz}>Pricing</Link></li>
-                    <li className='hover:text-lime-400 hover:transition hover:ease-in-out border-b p-1 w-max rounded-lg border-gray-600 cursor-pointer'><Link to="/contact" onClick={xyz}>Contact</Link></li>
+                <ul className='text-md font-bold uppercase space-y-4 flex flex-col justify-evenly text-sky-700'>
+                    <li className='active:text-lime-400 active:transition active:ease-in-out border-b p-1 w-max rounded-lg border-gray-600 cursor-pointer'><Link to="/" onClick={xyz}>Home</Link></li>
+                    <li className='active:text-lime-400 active:transition active:ease-in-out border-b p-1 w-max rounded-lg border-gray-600 cursor-pointer'><Link to="/about" onClick={xyz}>About</Link></li>
+                    <li className='active:text-lime-400 active:transition active:ease-in-out border-b p-1 w-max rounded-lg border-gray-600 cursor-pointer'><Link to="/pricing" onClick={xyz}>Pricing</Link></li>
+                    <li className='active:text-lime-400 active:transition active:ease-in-out border-b p-1 w-max rounded-lg border-gray-600 cursor-pointer'><Link to="/contact" onClick={xyz}>Contact</Link></li>
                 </ul>
                 <div className='w-full space-y-4 mt-4 flex flex-col items-center justify-center'>
                     <h1 className='font-mono'>Thanx for visit 42Weather app...</h1>

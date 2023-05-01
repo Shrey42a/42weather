@@ -8,7 +8,7 @@ import Notfound from './Notfound';
 function Page() {
     const [wdata, setWdata] = useState("");
     const [wdata2, setWdata2] = useState([]);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [q, setQ] = useState();
 
     // const savedDataString = localStorage.getItem("wdata") || "{}";
@@ -55,16 +55,6 @@ function Page() {
         });
     }, [q]);
 
-    if (loading) {
-        return (
-            <>
-                <Loading />
-            </>
-        );
-    }
-
-
-
     return (
         <>
             <div className='rounded-lg h-max w-full space-y-2 flex flex-col justify-center items-center'>
@@ -73,6 +63,7 @@ function Page() {
                     <img className='h-10 w-10 relative right-12' src='/loupe.png' />
                 </div>
                 {wdata && <Content wdata={wdata} wdata2={wdata2} />}
+                {loading && <Loading />}
                 {!wdata && <Notfound />}
             </div>
         </>

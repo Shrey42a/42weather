@@ -58,9 +58,9 @@
 }
 
 .bxsd {
-    background-color: rgba(185, 178, 191, 0.878);
-    box-shadow: inset 0px 2px 3px #79a4ae,
-        inset -3px -2px 3px #636465;
+    background-color: rgba(0, 229, 255, 0.178);
+    box-shadow: 0px 2px 6px #333d3fc1,
+        0px 0px 0px #000000;
 }
 
 .glass {
@@ -129,4 +129,7 @@
 
 .fnt {
     font-family: 'Monoton', cursive;
+    background: -webkit-linear-gradient(45deg, #d504fa, #2e2e2e 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
