@@ -59,11 +59,10 @@ function Page() {
         <>
             <div className='rounded-lg h-max w-full space-y-2 flex flex-col justify-center items-center'>
                 <div className='flex flex-row w-full justify-center items-center'>
-                    <input value={q} onKeyUp={handleKeyPress} placeholder="eg- meerut" className='shadow-sm text-gray-700 h-12 rounded-lg bg-white/20 w-1/2 outline-none px-4 py-2 focus:outline focus:outline-emerald-400' />
+                    <input value={q} onChange={onInputChange} placeholder="eg- meerut" className='shadow-sm text-gray-700 h-12 rounded-lg bg-white/20 w-1/2 outline-none px-4 py-2 focus:outline focus:outline-emerald-400' />
                     <img className='h-10 w-10 relative right-12' src='/loupe.png' />
                 </div>
                 {wdata && <Content wdata={wdata} wdata2={wdata2} />}
-                {loading && <Loading />}
                 {!wdata && <Notfound />}
             </div>
         </>
