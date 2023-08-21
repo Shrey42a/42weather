@@ -6,6 +6,8 @@ export const getData = async (q) => {
         q
     }
     const response = await axios
-        .get("https://api.weatherapi.com/v1/current.json?", { params })
+        .get("https://api.weatherapi.com/v1/current.json?/",{
+            params
+        })
     return response.data;
 }

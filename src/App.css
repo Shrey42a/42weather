@@ -18,7 +18,18 @@
     border: 3px solid transparent;
     border-radius: 50%;
     border-right-color: rgba(255, 255, 255, 0.7);
-    animation: spinner-anim 0.8s linear infinite;
+    -webkit-animation: spinner-anim 0.8s linear infinite;
+            animation: spinner-anim 0.8s linear infinite;
+}
+
+@-webkit-keyframes spinner-anim {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes spinner-anim {
@@ -129,7 +140,7 @@
 
 .fnt {
     font-family: 'Monoton', cursive;
-    background: -webkit-linear-gradient(45deg, #d504fa, #2e2e2e 50%);
+    background: -webkit-linear-gradient(45deg, #04fa5e, #00ff88 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

@@ -10,7 +10,7 @@ import Contact from './Contact';
 function App() {
   return (
     <>
-      <div className="bg-[url(/sk.jpg)] flex flex-col justify-between bg-cover max-h-max min-h-screen bg-fixed w-full">
+      <div className="bg-[url(https://images.wallpaperscraft.com/image/single/sea_sun_clouds_82769_2048x1429.jpg)] bg-center flex flex-col justify-between bg-cover max-h-max min-h-screen bg-fixed w-full">
         <Navbar />
         <div className='p-4'>
           <Routes>
